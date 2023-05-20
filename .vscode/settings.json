@@ -5,5 +5,14 @@
     "main.h": "c",
     "usart.h": "c",
     "gpio.h": "c"
-  }
+  },
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.runAndContinue",
+      "sequence": [
+        "workbench.action.debug.start",
+        {"command": "workbench.action.debug.continue", "delay": 100}
+      ]
+    }
+  ]
 }
