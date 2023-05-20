@@ -47,8 +47,10 @@
 
 /* USER CODE END PV */
 
-/* Private function prototypes -----------------------------------------------*/
+/* Private function prototypes
+ -----------------------------------------------*/
 void SystemClock_Config(void);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -96,10 +98,18 @@ int main(void)
   while (1)
   {
 
-    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+// główna pętla programu
+
+/*     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
     HAL_Delay(1000);
     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-    HAL_Delay(1000);
+    HAL_Delay(1000); */
+
+  HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
+  HAL_Delay(1000);
+
+
+
 
     /* USER CODE END WHILE */
 
