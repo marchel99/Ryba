@@ -1,20 +1,18 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "STM32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/Core/Inc"
+                "${workspaceFolder}/**"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "STM32F4", 
+                "USE_HAL_DRIVER"
             ],
-            "compilerPath": "C:\\mingw32\\bin\\gcc.exe",
+            "compilerPath": "Path_to_your_arm-none-eabi-gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "windows-gcc-x86",
+            "intelliSenseMode": "gcc-arm",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
