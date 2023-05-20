@@ -1,14 +1,21 @@
 {
     "configurations": [
         {
-            "name": "STM32",
+            "name": "Win32",
             "includePath": [
-                "C:/Users/mrchl/STM32CubeIDE/workspace_1.12.1/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Core/Inc"
             ],
-            "defines": [],      
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-arm"
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\mingw32\\bin\\gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x86",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
