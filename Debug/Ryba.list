@@ -246,8 +246,8 @@ int main(void)
  8000240:	4808      	ldr	r0, [pc, #32]	; (8000264 <main+0x3c>)
  8000242:	f000 fc65 	bl	8000b10 <HAL_GPIO_WritePin>
 
-  HAL_Delay(1000);
- 8000246:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+  HAL_Delay(300);
+ 8000246:	f44f 7096 	mov.w	r0, #300	; 0x12c
  800024a:	f000 f9ab 	bl	80005a4 <HAL_Delay>
 
     HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin,GPIO_PIN_RESET);
@@ -255,8 +255,8 @@ int main(void)
  8000250:	2120      	movs	r1, #32
  8000252:	4804      	ldr	r0, [pc, #16]	; (8000264 <main+0x3c>)
  8000254:	f000 fc5c 	bl	8000b10 <HAL_GPIO_WritePin>
-  HAL_Delay(1000);
- 8000258:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+  HAL_Delay(300);
+ 8000258:	f44f 7096 	mov.w	r0, #300	; 0x12c
  800025c:	f000 f9a2 	bl	80005a4 <HAL_Delay>
     HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin,GPIO_PIN_SET);
  8000260:	e7ec      	b.n	800023c <main+0x14>
