@@ -23,3 +23,6 @@
 764	1295	7062800991403811	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj	5def56991cd52105
 750	1485	7062800993354529	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj	315f14cc32fc7560
 248	537	7062907954054284	Ryba.elf	6061d059115c59c0
+8	335	7062940070586260	CMakeFiles/Ryba.dir/Core/Src/gpio.c.obj	bc4bfad15aedd62
+3	338	7062940070606259	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
+338	779	7062940073508026	Ryba.elf	6061d059115c59c0
