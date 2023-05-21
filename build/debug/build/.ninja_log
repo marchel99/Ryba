@@ -26,3 +26,5 @@
 8	335	7062940070586260	CMakeFiles/Ryba.dir/Core/Src/gpio.c.obj	bc4bfad15aedd62
 3	338	7062940070606259	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
 338	779	7062940073508026	Ryba.elf	6061d059115c59c0
+3	2166	7063997805732535	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
+2167	2903	7063997811570313	Ryba.elf	6061d059115c59c0
