@@ -88,7 +88,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  
+
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
@@ -96,16 +96,34 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+
+  volatile unsigned int cnt=0;
+
   while (1)
   {
+	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+
+	  for (cnt=0;cnt<4000000;cnt++);
+	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	  for (cnt=0;cnt<4000000;cnt++);
 
     /*     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
         HAL_Delay(1000);
         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
         HAL_Delay(1000); */
 
-    HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-    HAL_Delay(1000);
+   // HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+   // HAL_Delay(1000);
+
+
+
+
+
+
+
+
+
 
     /* USER CODE END WHILE */
 
@@ -135,8 +153,10 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
-//err
+//err 
     Error_Handler();
+
+    
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
