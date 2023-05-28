@@ -47,10 +47,8 @@
 
 /* USER CODE END PV */
 
-/* Private function prototypes
- -----------------------------------------------*/
+/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -88,7 +86,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
@@ -97,33 +94,36 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-
-  volatile unsigned int cnt=0;
+  volatile unsigned int cnt = 0;
 
   while (1)
   {
-	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-	  for (cnt=0;cnt<400000;cnt++);
-	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	  for (cnt=0;cnt<400000;cnt++);
+    if (HAL_GPIO_ReadPin(P1_GPIO_Port, P1_Pin) == 0)
+    {
+
+      HAL_Delay(5);
+      HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+
+      while (!HAL_GPIO_ReadPin(P1_GPIO_Port, P1_Pin));
+      // czekam na puszczenie przycisku
+        
+    }
+
+    /*   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+
+    HAL_Delay(1000);
+
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    HAL_Delay(1000); */
 
     /*     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
         HAL_Delay(1000);
         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
         HAL_Delay(1000); */
 
-   // HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-   // HAL_Delay(1000);
-
-
-
-
-
-
-
-
-
+    // HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+    // HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 
@@ -144,7 +144,6 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
    * in the RCC_OscInitTypeDef structure.
    */
-
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
@@ -153,14 +152,11 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
-//err 
     Error_Handler();
-
-    
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
-  //  */
+   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
