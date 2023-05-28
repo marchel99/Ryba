@@ -104,9 +104,9 @@ int main(void)
   {
 	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-	  for (cnt=0;cnt<4000000;cnt++);
+	  for (cnt=0;cnt<400000;cnt++);
 	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	  for (cnt=0;cnt<4000000;cnt++);
+	  for (cnt=0;cnt<400000;cnt++);
 
     /*     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
         HAL_Delay(1000);
