@@ -1,13 +1,13 @@
 # ninja log v5
 56	424	7062800981913744	CMakeFiles/Ryba.dir/Core/Startup/startup_stm32f103rbtx.s.obj	9c321c221965d814
-8	335	7062940070586260	CMakeFiles/Ryba.dir/Core/Src/gpio.c.obj	bc4bfad15aedd62
-3	245	7069850665303735	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
+9	495	7069862488012290	CMakeFiles/Ryba.dir/Core/Src/gpio.c.obj	bc4bfad15aedd62
+4	265	7069868078408295	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
 40	435	7062800982293707	CMakeFiles/Ryba.dir/Core/Src/sysmem.c.obj	a5b91c3a38084280
 48	684	7062800985039739	CMakeFiles/Ryba.dir/Core/Src/system_stm32f1xx.c.obj	9688b4db464b8c69
-24	711	7062800985279735	CMakeFiles/Ryba.dir/Core/Src/stm32f1xx_hal_msp.c.obj	fe94411edcc3626b
+21	489	7069862487967051	CMakeFiles/Ryba.dir/Core/Src/stm32f1xx_hal_msp.c.obj	fe94411edcc3626b
 12	445	7062800982753817	CMakeFiles/Ryba.dir/Core/Src/syscalls.c.obj	2c09233ff0bbb124
-18	763	7062800985209727	CMakeFiles/Ryba.dir/Core/Src/stm32f1xx_it.c.obj	caaa13b18e7abf77
-32	774	7062800985239705	CMakeFiles/Ryba.dir/Core/Src/usart.c.obj	d73e80eac86c4962
+15	496	7069862488012290	CMakeFiles/Ryba.dir/Core/Src/stm32f1xx_it.c.obj	caaa13b18e7abf77
+29	499	7069862488037425	CMakeFiles/Ryba.dir/Core/Src/usart.c.obj	d73e80eac86c4962
 66	783	7062800985686999	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj	c2943ef8f9c18b1e
 89	798	7062800985792012	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj	6106d03682d14884
 446	1169	7062800989898467	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj	6431ba25e05ca900
@@ -22,16 +22,6 @@
 618	1273	7062800991203818	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj	2b65d3cd71ca8fa0
 764	1295	7062800991403811	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj	5def56991cd52105
 750	1485	7062800993354529	CMakeFiles/Ryba.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj	315f14cc32fc7560
-246	542	7069850667390608	Ryba.elf	6061d059115c59c0
-21	489	7069862487967051	CMakeFiles/Ryba.dir/Core/Src/stm32f1xx_hal_msp.c.obj	fe94411edcc3626b
-9	495	7069862488012290	CMakeFiles/Ryba.dir/Core/Src/gpio.c.obj	bc4bfad15aedd62
-15	496	7069862488012290	CMakeFiles/Ryba.dir/Core/Src/stm32f1xx_it.c.obj	caaa13b18e7abf77
-29	499	7069862488037425	CMakeFiles/Ryba.dir/Core/Src/usart.c.obj	d73e80eac86c4962
-2	504	7069862488063316	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
-505	1038	7069862491782925	Ryba.elf	6061d059115c59c0
-3	232	7069862627606711	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
-233	519	7069862629623621	Ryba.elf	6061d059115c59c0
-3	250	7069864741360115	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
-251	725	7069864744124301	Ryba.elf	6061d059115c59c0
-4	265	7069868078408295	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
 266	561	7069868080506675	Ryba.elf	6061d059115c59c0
+2	1249	7070121687298271	CMakeFiles/Ryba.dir/Core/Src/main.c.obj	ba4f92aa5d1bce51
+1250	1852	7070121692054623	Ryba.elf	6061d059115c59c0
