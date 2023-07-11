@@ -98,6 +98,8 @@ int main(void)
 
   while (1)
   {
+ 
+
 
     if (HAL_GPIO_ReadPin(P1_GPIO_Port, P1_Pin) == 0)
     {
@@ -107,6 +109,7 @@ int main(void)
 
       while (!HAL_GPIO_ReadPin(P1_GPIO_Port, P1_Pin));
       // czekam na puszczenie przycisku
+      hal
         
     }
 
